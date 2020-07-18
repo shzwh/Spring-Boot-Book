@@ -18,10 +18,12 @@ public class GetPersonInfoController {
     //获取配置文件中的name
     @Value("${name}")
     private String name;
-@GetMapping("/getage")
+
+    @GetMapping("/getage")
     public int getAge() {
         return age;
     }
+
     @GetMapping("/getname")
     public String getName() {
         return name;
@@ -29,8 +31,9 @@ public class GetPersonInfoController {
 
     @Autowired
     private GetPersonInfoProperties getPersonInfoProperties;
+
     @GetMapping("/getpersonproperties")
     public String getpersonproperties() {
-        return getPersonInfoProperties.getName()+getPersonInfoProperties.getAge();
+        return "name is:"+getPersonInfoProperties.getName()+"    age:"+getPersonInfoProperties.getAge();
     }
 }

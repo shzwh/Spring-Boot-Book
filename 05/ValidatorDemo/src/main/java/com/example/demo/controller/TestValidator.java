@@ -24,6 +24,8 @@ public class TestValidator {
 
     @PostMapping("/test")
     public String checkUser(@Valid User user, BindingResult bindingResult, RedirectAttributes attr) {
+
+        System.out.println(user);
         //特别注意实体中的属性必须都验证过了，不然不会成功
         if (bindingResult.hasErrors()) {
             return "form";

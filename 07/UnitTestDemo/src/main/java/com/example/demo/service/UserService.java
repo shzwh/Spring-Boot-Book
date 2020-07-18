@@ -19,7 +19,7 @@ public class UserService {
     public User getUserInfo(){
         User user = new User();
         user.setName("zhonghua");
-        user.setAge(18);
+        user.setAge(19);
         return user;
     }
 }

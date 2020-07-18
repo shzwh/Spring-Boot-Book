@@ -13,4 +13,8 @@ public class HelloWorldControllerWordApplicationTests {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void test() {
+		System.out.println("This is test!");
+	}
 }

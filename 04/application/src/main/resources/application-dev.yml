@@ -12,3 +12,9 @@ name: zhaodabao
 personinfo:
   name: zhaoxiaobao
   age: 3
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java

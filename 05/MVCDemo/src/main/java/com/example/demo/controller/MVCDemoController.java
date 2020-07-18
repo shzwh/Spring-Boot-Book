@@ -16,6 +16,7 @@ public class MVCDemoController {
         User user=new User();
         user.setName("zhonghua");
         user.setAge(28);
+
         //定义mvc中的视图模板
         ModelAndView modelAndView=new ModelAndView("mvcdemo");
         //传递user实体对象给视图
